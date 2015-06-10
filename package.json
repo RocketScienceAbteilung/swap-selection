@@ -1,7 +1,7 @@
 {
   "name": "swap-selection",
   "main": "./lib/swap-selection",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "Swap/cycle your current selections in the editor",
   "keywords": [
   ],
