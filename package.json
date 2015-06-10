@@ -1,13 +1,10 @@
 {
   "name": "swap-selection",
   "main": "./lib/swap-selection",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Swap/cycle your current selections in the editor",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
-    "body": "swap-selection:cycle",
-    "body": "swap-selection:left",
     "body": "swap-selection:right"
   },
   "repository": "https://github.com/RocketScienceAbteilung/swap-selection",
@@ -15,6 +12,5 @@
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
