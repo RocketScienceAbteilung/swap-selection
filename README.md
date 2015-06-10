@@ -1,5 +1,10 @@
-# swap-selection package
+# Swap Selection
 
-A short description of your package.
+An atom plugin which cycles/swaps your current editors text selections with a single keypress.
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+![cycle it](https://cloud.githubusercontent.com/assets/72940/8087278/33a2d014-0f9a-11e5-9b41-56141c8fc80a.gif)
+
+## Featues
+
+* supports two or more selections
+* cycle left or right
