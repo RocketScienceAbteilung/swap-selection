@@ -2,8 +2,8 @@
 'context-menu':
   'atom-text-editor': [
     {
-      'label': 'Toggles swap-selection'
-      'command': 'swap-selection:toggle'
+      'label': 'Swap selection'
+      'command': 'swap-selection:right'
     }
   ]
 'menu': [
@@ -13,8 +13,8 @@
       'label': 'swap-selection'
       'submenu': [
         {
-          'label': 'Toggle'
-          'command': 'swap-selection:toggle'
+          'label': 'Swap selection'
+          'command': 'swap-selection:right'
         }
       ]
     ]

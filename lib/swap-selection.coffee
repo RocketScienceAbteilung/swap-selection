@@ -5,7 +5,7 @@ module.exports = SwapSelection =
 
   activate: ->
     @subscriptions = new CompositeDisposable
-    @subscriptions.add atom.commands.add 'atom-workspace',
+    @subscriptions.add atom.commands.add 'atom-text-editor',
       'swap-selection:cycle': => @cycle(),
       'swap-selection:left': => @cycle(false),
       'swap-selection:right': => @cycle(true)

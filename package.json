@@ -5,7 +5,7 @@
   "description": "swaps/cycles/transposes your current text selections",
   "keywords": [],
   "activationCommands": {
-    "body": "swap-selection:right"
+    "atom-text-editor": "swap-selection:right"
   },
   "repository": "https://github.com/RocketScienceAbteilung/swap-selection",
   "license": "MIT",
