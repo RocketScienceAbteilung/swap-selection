@@ -1,4 +1,4 @@
-# Swap Selection
+# Swap Selection ![travis](https://travis-ci.org/RocketScienceAbteilung/swap-selection.svg?branch=master)
 
 An atom plugin which swaps/cycles/transposes your current editors text selections with a single keypress.
 Similar to [atom-transpose](https://atom.io/packages/atom-transpose) but supports more than two selections.
