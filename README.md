@@ -7,10 +7,12 @@ Similar to [atom-transpose](https://atom.io/packages/atom-transpose) but support
 
 ## Usage
 
-* use `alt-t` to swap/cycle in foreward (right) direction
-* use `shift-alt-t` to swap/cycle in backward (left) direction
+* make two or more selections
+* use `alt-t` to swap/cycle selections in foreward (right) direction
+* use `shift-alt-t` to swap/cycle selections in backward (left) direction
 
 ## Featues
 
 * supports two or more selections
-* cycle left or right direction
+* cycles forwards or backwards
+* if no selections are made, but multiple cursors are set, these lines are swapped.

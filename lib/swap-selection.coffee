@@ -15,6 +15,9 @@ module.exports = SwapSelection =
 
   cycle: (right) ->
     if editor = atom.workspace.getActiveTextEditor()
+      if @selectionsAreEmpty()
+        editor.selectLinesContainingCursors()
+
       texts = editor.getSelections().map (item) -> item.getText()
 
       if right
@@ -25,3 +28,10 @@ module.exports = SwapSelection =
       editor.transact ->
         for selection, i in editor.getSelections()
           selection.insertText(texts[i], {select: true})
+
+
+  selectionsAreEmpty: ->
+    editor = atom.workspace.getActiveTextEditor()
+    for selection in editor.getSelections()
+      return false unless selection.isEmpty()
+    true
