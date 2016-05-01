@@ -22,5 +22,6 @@ module.exports = SwapSelection =
       else
         texts.push(texts.shift())
 
-      for selection, i in editor.getSelections()
-        selection.insertText(texts[i], {select: true})
+      editor.transact ->
+        for selection, i in editor.getSelections()
+          selection.insertText(texts[i], {select: true})
