@@ -32,3 +32,14 @@ describe "SwapSelection", ->
 
         swapSelection ->
           expect(editor.getText()).toBe 'one two three'
+
+    it "does it all in one transaction", ->
+      expected = 'two one three'
+
+      editor.setText expected
+      # selecting "one" "two"
+      editor.setSelectedBufferRanges([[[0, 0], [0, 3]], [[0, 4], [0, 7]]])
+
+      swapSelection ->
+        editor.undo()
+        expect(editor.getText()).toBe expected
